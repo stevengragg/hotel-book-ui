@@ -1,22 +1,31 @@
-import type { Config } from "tailwindcss"
+import type { Config } from "tailwindcss";
 
 const config = {
   darkMode: ["class"],
   content: [
-    './pages/**/*.{ts,tsx}',
-    './components/**/*.{ts,tsx}',
-    './app/**/*.{ts,tsx}',
-    './src/**/*.{ts,tsx}',
+    "./pages/**/*.{ts,tsx}",
+    "./components/**/*.{ts,tsx}",
+    "./app/**/*.{ts,tsx}",
+    "./src/**/*.{ts,tsx}",
   ],
   prefix: "",
   theme: {
     container: {
       center: true,
       padding: "2rem",
-      screens: {
-        "2xl": "1400px",
-      },
     },
+    screens: {
+      sm: "640px",
+      md: "768px",
+      lg: "960px",
+      xl: "1200px",
+      "2xl": "1400px",
+    },
+    // colors: {
+    //   white: "#fff",
+    //   black: "#273029",
+
+    // },
     extend: {
       keyframes: {
         "accordion-down": {
@@ -33,8 +42,12 @@ const config = {
         "accordion-up": "accordion-up 0.2s ease-out",
       },
     },
+    backgroundImage: {
+      hero: "url(/hero/bg.png)",
+      hero2: "url(/hero/bg-2.png)",
+    },
   },
   plugins: [require("tailwindcss-animate")],
-} satisfies Config
+} satisfies Config;
 
-export default config
+export default config;

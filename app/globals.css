@@ -47,4 +47,29 @@
     --input: 240 3.7% 15.9%;
     --ring: 142.4 71.8% 29.2%;
   }
+
+  body {
+    @apply bg-white text-gray-800 leading-8;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @apply text-zinc-900 font-bold;
+  }
+
+  .header2 {
+    @apply text-[32px];
+  }
+
+  .header3 {
+    @apply text-2xl;
+  }
+
+  .header4 {
+    @apply text-xl;
+  }
 }
