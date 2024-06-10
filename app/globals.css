@@ -49,7 +49,7 @@
   }
 
   body {
-    @apply bg-white text-gray-800 leading-8;
+    @apply bg-white text-black leading-8;
   }
 
   h1,
@@ -58,7 +58,7 @@
   h4,
   h5,
   h6 {
-    @apply text-zinc-900 font-bold;
+    @apply text-zinc-800 font-bold;
   }
 
   .header2 {

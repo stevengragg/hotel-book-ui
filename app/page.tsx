@@ -5,7 +5,7 @@ import Hero from "@/components/sections/Hero";
 
 export default function Home() {
   return (
-    <main className="">
+    <main className="max-w-[1440px] mx-auto bg-white overflow-hidden">
       <Header />
       <Hero />
       <Footer />
